@@ -16,10 +16,10 @@
   <h1> Olá, Mundo! </h1>
   <p>Já me livrei da maldição</p>
   <script>
-  var n1 = window.prompt('Digite um numero:')
-  var n2 = window.prompt('Digite outro numero:')
+  var n1 = Number.parseFloat (window.prompt('Digite um numero:'))
+  var n2 = Number.parseFloat ( window.prompt('Digite outro numero:'))
   var s = n1 + n2
-  alert('A soma entre' + n1 + 'e' + n2 + 'é igual a' + s)
+  alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
   </script>
 </body>
 </html>
