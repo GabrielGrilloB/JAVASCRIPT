@@ -6,6 +6,23 @@
   <title>País</title>
 </head>
 <body>
-  
+  <h1>Nacionalidade</h1>
+  País de nascimento: <input type="text" name="txtp" id="txtp">
+  <input type="button" value="verificar" onclick="definir()"> 
+  <div id="res"></div>
+  <script>
+    function definir(){
+      var p = window.document.getElementById('txtp')
+      var res = window.document.getElementById('res') 
+      var pais = p.value.trim().toLowerCase()
+      res.innerHTML = `<p> Seu país é o/a <strong> ${pais} </strong> </p>`
+      if (pais === `Brasil`){
+        res.innerHTML += `<p> Você é Brasileiro! </p>`
+      } else { res.innerHTML += `<p>Você é estrangeiro!</p>`
+      
+      }
+
+    }
+  </script>
 </body>
 </html>
